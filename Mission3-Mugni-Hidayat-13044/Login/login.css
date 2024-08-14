@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Londrina+Solid:wght@100;300;400;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+/* lato font */
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Londrina+Solid:wght@100;300;400;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  background: url(/asset/bg\ login.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  text-align: center;
+  min-width: 450px;
+  padding: 30px 20px;
+  background: rgba(36, 34, 34, 0.9);
+  border-radius: 20px;
+}
+.logo .text {
+  font-size: 50px;
+  color: #fff;
+  margin-bottom: 25px;
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.logo img {
+  width: 50px;
+  height: 50px;
+  margin-top: -28px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 8px;
+}
+.text {
+  text-align: center;
+  color: #fff;
+}
+.text h4 {
+  margin-bottom: 5px;
+  font-size: 35px;
+}
+.text p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+}
+
+.register-form label {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.register-form input {
+  width: 100%;
+  margin-bottom: 25px;
+  padding: 15px;
+  color: #fff;
+  font-size: 14px;
+  border: 0.5px solid #fff;
+  border-radius: 25px;
+  background: transparent;
+  outline: none;
+}
+
+.register-form p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.register-form p a {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 700;
+}
+.message {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.message a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+.container button {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  font-size: 18px;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  background: #2e2e2e;
+  text-align: center;
+}
+.container button a {
+  text-decoration: none;
+  color: #fff;
+}
+.container button:hover {
+  cursor: pointer;
+  background: #2b5cb8;
+  color: #fff;
+}
+
+.btn-google {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  background: #494c50;
+}
+.container button img {
+  width: 25px;
+}
+.container h2 {
+  color: #928e8e;
+  font-size: 14px;
+}
+
+/* REsponsive */
+@media (max-width: 430px) {
+  .container {
+    text-align: center;
+    min-width: 250px;
+    padding: 30px 20px;
+    background: rgba(36, 34, 34, 0.9);
+    border-radius: 20px;
+  }
+  .logo .text {
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 25px;
+    font-family: "Londrina Solid", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .logo img {
+    width: 30px;
+    height: 30px;
+    margin-top: -28px;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 8px;
+  }
+  .text {
+    text-align: center;
+    color: #fff;
+  }
+  .text h4 {
+    margin-bottom: 5px;
+    font-size: 25px;
+  }
+  .text p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  .register-form label {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  .message {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+    color: #813a3a;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+}
